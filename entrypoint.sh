@@ -7,4 +7,6 @@ export GOOGLE_APPLICATION_CREDENTIALS=/tmp/sa.json
 npx -y supergateway \
   --stdio "pipx run analytics-mcp" \
   --outputTransport streamableHttp \
-  --port 8080
+  --streamableHttpPath /mcp \
+  --port 8080 \
+  --cors
